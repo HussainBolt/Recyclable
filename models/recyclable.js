@@ -14,7 +14,7 @@ const changesSchema = new Schema({
         min: 0,
     },
     details: String,
-    hmmm: String,
+    address: String,
     comment: String,
 }, {
     timestamps: true,
@@ -31,16 +31,16 @@ const recyclableSchema = new Schema({
     title: {
         type: String,
     },
-    mainCategory: {
+    material: {
         type: String,
-        enum: ['SUV', 'Van', 'Sedan', 'Hatchback', 'Sports', 'Coupe']
+        enum: ['None', 'Wood', 'Paper', 'Glass', 'Plastic', 'Metal', 'Food', 'Styrofoam', 'Electronic', 'Construction', 'Plastics', 'Carrier']
     },
     howMany: {
         type: Number,
         min: 0,
     },
     details: [String],
-    hmmm: [String],
+    address: [String],
     changes: [changesSchema],
 }, {
     timestamps: true,

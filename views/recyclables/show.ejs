@@ -3,7 +3,7 @@
 <div class="flex-container">
   <h1 class="title-card"><%= recyclable.title %></h1>
   <div class="flex-container show-recyclable">
-    <div>Car Type: <%= recyclable.carType %></div>
+    <div>Material: <%= recyclable.material %></div>
     <div>How many: <%= recyclable.howMany %> recyclable<%- recyclable.howMany !== 1 ? 's' : '' %></div>
     
     <% if(recyclable.details) { %>

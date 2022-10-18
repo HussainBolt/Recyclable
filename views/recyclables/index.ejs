@@ -3,7 +3,7 @@
 <div class="flex-container">
   <h1 class="title-card"><%= title %></h1>
   <% recyclables.forEach(function(r) { %>
-    <a href="/recyclables/<%= r._id %>" class="recyclable-preview"><%= r.title %> - <%= r.mainCategory %></a>
+    <a href="/recyclables/<%= r._id %>" class="recyclable-preview"><%= r.title %> <%= r.material %></a>
   <% }) %>
 </div>
 
