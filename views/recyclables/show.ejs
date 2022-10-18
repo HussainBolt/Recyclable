@@ -1,0 +1,40 @@
+<%- include('../partials/header') %>
+
+<div class="flex-container">
+  <h1 class="title-card"><%= recyclable.title %></h1>
+  <div class="flex-container show-recyclable">
+    <div>Car Type: <%= recyclable.carType %></div>
+    <div>How many: <%= recyclable.howMany %> recyclable<%- recyclable.howMany !== 1 ? 's' : '' %></div>
+    
+    <% if(recyclable.details) { %>
+      <div>
+        Details:
+        <ol>
+          <% recyclable.details = recyclable.details[0].split(', ') %>
+          <% recyclable.details.forEach(function(s) { %>
+            <li>
+              <%= s %>
+            </li>
+          <% }) %>
+        </ol>
+      </div>
+      <% } %>
+    <div>
+      <h1 class="user">Posted by <%= recyclable.userName %></h1>
+    </div>
+    <% if(user && user._id.equals(recyclable.user)) { %>
+      <div>
+        <form action="/recyclables/<%= recyclable._id %>/edit" method="GET">
+            <button class="btn">Edit Recyclable</button>
+        </form>
+      </div>
+      <div>
+        <form action="/recyclables/<%= recyclable._id %>?_method=DELETE" method="POST">
+            <button type="submit" class="btn">Delete Recyclable</button>
+        </form>
+      </div>
+    <% } %>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

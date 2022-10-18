@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <title><%= title %></title>
+</head>
+
+<body>
+  <nav>
+    <% if(user) { %>
+      <a href="/recyclables/new" class="add-recyclable-btn btn <%- title === 'Add Recyclable' ? 'active' : '' %>">Add Recyclable</a>
+      <a href="/recyclables" class="btn <%- title === 'All Recyclables' ? 'active' : '' %>">All Recyclables</a>
+      <a href="/logout" class="btn">Log Out</a>
+    <% } else { %>
+      <a href="/auth/google" class="add-recyclables-btn btn">Add Recyclable</a>
+      <a href="/recyclables" class="btn <%- title === 'All Recyclables' ? 'active' : '' %>">All Recyclables</a>
+      <a href="/auth/google" class="btn">Log In</a>
+    <% } %>
+  </nav>
+  
+  <main>

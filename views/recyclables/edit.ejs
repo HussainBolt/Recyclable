@@ -1,0 +1,54 @@
+<%- include('../partials/header') %>
+
+<div class="flex-container">
+  <h1 class="title-card"><%= title %></h1>
+
+  <form action="/recyclables/<%= recyclable._id %>?_method=PUT" method="POST">
+    <div class="flex-container">
+      <div>
+        <label>Title</label>
+        <input type="text" name="title" value="<%= recyclable.title %>">
+      </div>
+  
+      <div>
+        <label>Main Category</label>
+        <select name="mainCategory">
+          <option value="None">n/a</option>
+          <option value="Wood">Wood</option>
+          <option value="Paper">Paper including newspapers, magazines, and mixed paper</option>
+          <option value="Glass">Glass bottles and jars</option>
+          <option value="Plastic">Rigid plastic products</option>
+          <option value="Metal">Metal containers, including tin, aluminum, and steel cans</option>
+          <option value="Food">Food waste, greasy paper, such as oil-soaked paper plates and pizza boxes</option>
+          <option value="Styrofoam">Styrofoam, otherwise known as expanded polystyrene (EPS)</option>
+          <option value="Electronic">Electronic waste</option>
+          <option value="Construction">Construction and demolition (C&D) debris, such as concrete and drywall</option>
+          <option value="Plastics">Film plastics, such as plastic bags, shrink wrap, and bubble wrap</option>
+          <option value="Carrier">Carrier stock, the paper packaging around packs of drink cans</option>
+        </select>
+      </div>
+      
+      <div>
+        <label>How many</label>
+        <input type="number" name="how many" value="<%= recyclable.howmany %>">
+      </div>
+      
+      <div>
+        <label>Details</label>
+        <input type="text" name="details" value="<%= recyclable.details.join(', ') %>">
+      </div>
+      
+      <div>
+        <label></label>Street Address</label>
+        <input type="text" name="address" value="<%= recyclable.address.join(', ') %>">
+      </div>
+      
+      <div>
+        <input type="submit" value="Resubmit Recyclable" class="btn">
+      </div>
+
+    </div>
+  </form>
+</div>
+  
+<%- include('../partials/footer') %>
