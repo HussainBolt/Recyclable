@@ -16,6 +16,8 @@
 
 ![Screen Shot 2022-10-19 at 10 51 10 AM](https://user-images.githubusercontent.com/112985816/196768607-2587c905-04a3-4740-9f33-99c31c7bc2e5.png)
 
+#### You can edit or add specifications into your posts, what the item is amde of, number of items, etc.
+
 ![Screen Shot 2022-10-19 at 10 54 42 AM](https://user-images.githubusercontent.com/112985816/196768631-6ec6eb29-ec7b-40de-9bda-b994b0a482f6.png)
 
 ![Screen Shot 2022-10-19 at 10 56 46 AM](https://user-images.githubusercontent.com/112985816/196768633-782f89a3-79f5-475b-8f8b-5b029f2a27cc.png)
