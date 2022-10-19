@@ -1,6 +1,7 @@
 # Recyclable
 
 ### This site's purpose is to post all recyclabes so we can locate and distribute properly
+Here's the site -> https://recyclable.onrender.com/
 
 ![Screen Shot 2022-10-19 at 10 39 27 AM](https://user-images.githubusercontent.com/112985816/196768590-7486e03b-f3f6-4c1c-abf2-091d0f11aacb.png)
 
@@ -21,3 +22,20 @@
 ![Screen Shot 2022-10-19 at 10 54 42 AM](https://user-images.githubusercontent.com/112985816/196768631-6ec6eb29-ec7b-40de-9bda-b994b0a482f6.png)
 
 ![Screen Shot 2022-10-19 at 10 56 46 AM](https://user-images.githubusercontent.com/112985816/196768633-782f89a3-79f5-475b-8f8b-5b029f2a27cc.png)
+
+## Technology Used
+
+- HTML/CSS
+- JavaScript/EJS
+- Express
+- Node.js
+- MongoDB/Mongoose
+- Passport.js
+
+## Next Steps
+
+Future icebox features include:
+- adding a map to specify location
+- more details to address and description of p/up location
+- improve the styling
+
