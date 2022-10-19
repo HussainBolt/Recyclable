@@ -33,13 +33,13 @@ p {
 }
 
 .btn {
-  background-color: var(--btn-bg);
+  background-color: var(--add-recyclable-btn-bg);
   color: white;
   text-decoration: none;
-
   border: solid var(--btn-border-width) var(--btn-bg);
   border-radius: .5rem;
-
+  border-color: var(--add-recyclable-btn-bg);
+  text-shadow: 1px 1px rgb(59, 11, 79);
   padding: .10rem 1rem;
   text-align: center;
 }
@@ -48,19 +48,25 @@ p {
   background-color: black;
   border: solid gray var(--btn-border-width);
   border-radius: 50%;
+  text-shadow: 1px 1px rgb(59, 11, 79)
 }
 
 .round-btn:hover {
   opacity: .5;
+  border-color: var(--add-recyclable-btn-bg);
+  box-shadow: 2px 3px rgb(144, 46, 0)
 }
 
 .btn:hover {
   color: darkblue;
   border: solid 2px;
+  box-shadow: 2px 3px rgb(144, 46, 0);
+  transform: rotate(3deg)
 }
 
 .btn.active:hover {
   border: solid 2px;
+  box-shadow: 2px 3px rgb(144, 46, 0)
 }
 
 .add-recyclable-btn {
@@ -68,10 +74,12 @@ p {
   margin-right: auto;
   background-color: var(--add-recyclable-btn-bg);
   border-color: var(--add-recyclable-btn-bg);
+  text-shadow: 1px 1px rgb(59, 11, 79)
 }
 
 .add-recyclable-btn:hover {
   color: darkblue;
+  box-shadow: 2px 3px rgb(144, 46, 0)
 }
 
 .active {
@@ -82,16 +90,17 @@ p {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  align-items: center;
+  align-items: flex-start;
+  text-shadow: 2px 2px rgb(59, 11, 79)
 }
 
 .title-card {
   background-color: var(--title-card-bg);
   color: white;
-
   border-radius: calc(var(--title-card-height) / 2);
   padding: 3px 50px;
-  font: 35px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font: 35px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 2px 4px rgb(59, 11, 79);
 }
 
 .recyclable-preview {
@@ -99,12 +108,15 @@ p {
   color: white;
   border-radius: calc(var(--recyclable-card-height) / 2);
   padding: 3px 10px;
+  margin: 5px;
   text-decoration: none;
-  font: 25px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font: 25px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  box-shadow: 3px 6px rgb(59, 11, 79)
 }
 
 .recyclable-preview:hover {
   background-color: rgb(59, 11, 79);
+  transform: rotate(-3deg)
 }
 
 .recyclable-form {
@@ -112,6 +124,8 @@ p {
   display: grid;
   padding: 20px;
   background-color: var(--recyclable-bg);
+  border-radius: 7px;
+  box-shadow: 3px 7px rgb(59, 11, 79)
 }
 
 .recyclable-card {
@@ -125,16 +139,18 @@ p {
 
   border-radius: calc(var(--title-card-height) / 2);
   padding: 10px 25px;
-  font-size: 30px;
+  font-size: 30px
 }
 
 .flex-container.show-recyclable {
+  flex-direction: column;
   color: white;
   background-color: var(--recyclable-bg);
   padding: 10px;
   margin: 15px 100px 50px 100px;
   font-size: 20px;
   border-radius: 8px;
+  box-shadow: 5px 10px rgb(59, 11, 79);
 }
 
 .user {

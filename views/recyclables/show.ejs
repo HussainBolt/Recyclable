@@ -9,18 +9,19 @@
     <% if(recyclable.details) { %>
       <div>
         Details:
-        <ol>
+        <ul>
           <% recyclable.details = recyclable.details[0].split(', ') %>
           <% recyclable.details.forEach(function(s) { %>
             <li>
               <%= s %>
             </li>
           <% }) %>
-        </ol>
+        </ul>
       </div>
+      <div>Pick-Up Location: <%= recyclable.address %></div>
       <% } %>
     <div>
-      <h1 class="user">Posted by <%= recyclable.userName %></h1>
+      <h1 class="user">Reported by <%= recyclable.userName %></h1>
     </div>
     <% if(user && user._id.equals(recyclable.user)) { %>
       <div>
