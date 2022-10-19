@@ -1,8 +1,10 @@
 # Recyclable
 
-Post all of your recyclables with a pick up location.
+### This site's purpose is to post all recyclabes so we can locate and distribute properly
 
 ![Screen Shot 2022-10-19 at 10 39 27 AM](https://user-images.githubusercontent.com/112985816/196768590-7486e03b-f3f6-4c1c-abf2-091d0f11aacb.png)
+
+#### Log in with an account to make posts
 
 ![Screen Shot 2022-10-19 at 10 40 02 AM](https://user-images.githubusercontent.com/112985816/196768600-b3ad9dae-70f2-4d8a-af91-c533ff2bd003.png)
 
