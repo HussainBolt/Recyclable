@@ -153,6 +153,25 @@ p {
   box-shadow: 5px 10px rgb(59, 11, 79);
 }
 
+section {
+  background-color: aqua;
+  border-radius: 8px;
+  margin: 50px;
+  padding: 3px;
+  box-shadow: 2px 4px rgb(59, 11, 79)
+}
+
+.about {
+  display: block;
+  font-size: 20px;
+  margin: 20px 100px 20px 100px;
+}
+
+.keys {
+  text-align: center;
+  margin: 20px 100px 20px 10px;
+}
+
 .user {
   font-size: 15px;
 }
