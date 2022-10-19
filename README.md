@@ -1,5 +1,6 @@
 # Recyclable
 
+Post all of your recyclables with a pick up location.
 
 ![Screen Shot 2022-10-19 at 10 39 27 AM](https://user-images.githubusercontent.com/112985816/196768590-7486e03b-f3f6-4c1c-abf2-091d0f11aacb.png)
 
